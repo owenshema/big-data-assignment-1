@@ -63,7 +63,7 @@ The primary goal of this project is to analyze the Uber Fares dataset to uncover
 - Values: Count of fare_amount
 
 
-<img width="891" height="603" alt="fare vs hourday" src="https://github.com/user-attachments/assets/427e6eef-0d2f-4877-b124-359ad12b4fde" />
+ 
 
 
 <img width="1253" height="534" alt="histogram days" src="https://github.com/user-attachments/assets/50e4972a-b546-42c7-80b5-bfb0dbdeae97" />

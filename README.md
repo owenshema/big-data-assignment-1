@@ -52,7 +52,7 @@ The primary goal of this project is to analyze the Uber Fares dataset to uncover
 - Exported enhanced dataset (uber_enhanced.csv).
 
 
-<img width="458" height="390" alt="Image" src="https://github.com/user-attachments/assets/82c4370d-fac7-46c7-adf6-78286f2669bf" />
+
 ---
 <img width="691" height="612" alt="fare amount" src="https://github.com/user-attachments/assets/4550b766-873d-413a-b484-d98a5a181559" />
 ### 4. 📊 Power BI Analysis

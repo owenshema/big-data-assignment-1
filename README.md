@@ -1,68 +1,158 @@
-# 🚖 Uber Fares Dataset Analysis – Power BI Project
+# Uber-Fares-Dataset-Analysis-using-Power-BI
 
-**Course:** Introduction to Big Data Analytics (INSY 8413)  
-**Instructor:** Eric Maniraguha  
-**Student:** Shema Owen  
-**Dataset Source:** [Kaggle – Uber Fares Dataset](https://www.kaggle.com/datasets/yasserh/uber-fares-dataset)  
-**Date Submitted:** July 25, 2025
+
+# 📊 Uber Fares Dataset Analysis using Power BI
+
+*Course:* Introduction to Big Data Analytics – INSY 8413  
+*Instructor:* Eric Maniraguha (📧 [eric.maniraguha@auca.ac.rw](mailto:eric.maniraguha@auca.ac.rw)) 
+*Group:* A 
+*Tool:* Power BI Desktop  
+*Dataset Source:* Uber Fares Dataset from Kaggle  
+*Student Name:*SHEMA Owen 
+*Student ID:* 26253
+---
+
+## 🚀 Project Objectives
+
+The primary goal of this project is to analyze the Uber Fares dataset to uncover key insights about fare patterns, ride times, and operational metrics. Specific objectives include:
+
+- Understanding the dataset through Exploratory Data Analysis (EDA)
+- Cleaning and transforming the dataset using Python (Pandas)
+- Enhancing the data with new analytical features
+- Importing the enhanced dataset into Power BI for visualization
+- Designing an interactive dashboard that highlights fare behavior across time and geography
+- Presenting actionable insights for stakeholders
+
+---
+## 🧪 Step-by-Step Implementation
+
+### 1. 📥 Data Collection & Loading
+- Downloaded Uber dataset from Kaggle.
+- Loaded into Jupyter Notebook using Pandas.
+- Explored the structure, data types, null values, and duplicate rows.
+
+<img width="1039" height="470" alt="basic" src="https://github.com/user-attachments/assets/fcf9b973-a5d1-466f-9166-926c35dd98ed" />
+
 
 ---
 
-## 📌 Overview
+### 2. 🧹 Data Cleaning
+- Removed missing values and extreme outliers (fare, distance).
+- Converted timestamps into proper datetime objects.
 
-This project analyzes the Uber Fares dataset to extract business insights using Python and Power BI. After cleaning and enriching the dataset, we built an interactive dashboard to visualize fare patterns, ride times, locations, and passenger behavior.
 
----
-
-## ⚙️ Workflow Summary
-
-### ✅ Python (Data Preprocessing)
-- Removed nulls and rows with 0 values
-- Feature engineering:
-  - Hour, day, month, day_of_week, is_peak
-  - Calculated trip distance using Haversine formula
-- Exported final dataset: `uber_enhanced final one.csv`
-
-### ✅ Power BI (Dashboard Creation)
-- Imported cleaned CSV
-- Visualized key patterns:
-  - Fare distribution
-  - Fare vs distance
-  - Ride frequency by hour/day
-  - Fare by passenger count
-  - Pickup location map
-- Used slicers to filter by day, month, passenger count, and peak hours
+<img width="819" height="425" alt="Screenshot 2025-07-24 063227 - Copy - Copy" src="https://github.com/user-attachments/assets/b01cd3fb-17f8-48c8-b281-31880db02064" />
 
 ---
 
-## 📊 Key Visuals
 
-- **Histogram:** Fare amount distribution  
-- **Line Chart:** Average fare by hour  
-- **Scatter Plot:** Fare vs distance  
-- **Box Plot:** Fare by day of week  
-- **Map:** Pickup locations  
-- **Bar Chart:** Rides per weekday  
+### 3. 🧠 Feature Engineering
+- Extracted pickup_hour, pickup_day, pickup_month, pickup_dayofweek.
+- Calculated trip_distance_km using haversine formula.
+- Exported enhanced dataset (uber_enhanced.csv).
+
+
+<img width="458" height="390" alt="Image" src="https://github.com/user-attachments/assets/82c4370d-fac7-46c7-adf6-78286f2669bf" />
+---
+<img width="691" height="612" alt="fare amount" src="https://github.com/user-attachments/assets/4550b766-873d-413a-b484-d98a5a181559" />
+### 4. 📊 Power BI Analysis
+
+#### Visual 1: Number of Rides by Hour of Day
+- Chart Type: Clustered Column
+- Axis: pickup_hour
+- Values: Count of fare_amount
+
+
+<img width="891" height="603" alt="fare vs hourday" src="https://github.com/user-attachments/assets/427e6eef-0d2f-4877-b124-359ad12b4fde" />
+
+
+<img width="1253" height="534" alt="histogram days" src="https://github.com/user-attachments/assets/50e4972a-b546-42c7-80b5-bfb0dbdeae97" />
+
+
+
+
+
+#### Visual 2: Average Fare by Hour
+- Chart Type: Clustered Column
+- Axis: pickup_hour
+- Values: Average of fare_amount
+
+
+<img width="891" height="603" alt="fare vs hourday" src="https://github.com/user-attachments/assets/20bdd986-d326-4c6c-a850-d01b3c312195" />
+
+
+
+
+
+
+#### Visual 3: Fare Distribution by Day of Week
+- Chart Type: Clustered Bar Chart (Box plot not available)
+- Axis: pickup_dayofweek
+- Values: fare_amount
+
+
+
+
+
+
+
+
+
+#### Visual 4: Scatter Plot (Fare vs Trip Distance)
+- Chart Type: Scatter Plot
+- X-Axis: trip_distance_km
+- Y-Axis: fare_amount
+- Details: passenger_count (optional)
+
+
+
+
+
+
+#### Visual 5: Pickup Locations Map (Alternative)
+- Used: Line and Stacked Column Chart due to map unavailability
+
+
+
 
 ---
 
-## 🔍 Findings
+### 5. 📈 Dashboard Design
+- Unified visuals into interactive layout.
+- Added slicers for time filters (hour, day, month).
+- Formatted chart titles, colors, and tooltips.
 
-- Most trips have 1–2 passengers and cost under $20  
-- Fares peak during morning and evening commute hours  
-- Fare and trip distance are strongly correlated  
-- Weekends show slightly higher average fares  
+<img width="750" height="406" alt="dashboard power bi" src="https://github.com/user-attachments/assets/00602550-28a1-47bf-ac93-59755c7c4c87" />
 
----
 
-## 💡 Recommendations
-
-- Optimize pricing during weekend and evening peaks  
-- Promote pooled/shared rides for short trips  
-- Enhance driver coverage during early and late hours
 
 ---
 
-## 📁 Files in Repository
+## 📖 Final Report Sections
 
-# big-data-assignment-1
+- *Introduction*: Overview of project purpose and dataset.
+- *Methodology*: Python for data cleaning + Power BI for analysis.
+- *Analysis*: Key findings from each visual.
+- *Results*: Trends and patterns discovered.
+- *Conclusion*: Summary of fare behavior.
+- *Recommendations*: Suggestions for Uber – peak hour strategies, price adjustments, etc.
+
+📄 See: Report.pdf or Report.pptx
+
+---
+
+## 📬 Submission Checklist
+
+- [x] Power BI File (.pbix)
+- [x] Cleaned & enhanced CSV files
+- [x] Jupyter Notebook used for Python processing
+- [x] All screenshots in visuals/ or screenshots/ folder
+- [x] README.md file (this file)
+- [x] Final Report (PDF or PowerPoint)
+- [x] GitHub repo public & link emailed to instructor
+
+---
+
+## ✅ Academic Integrity
+
+All work submitted in this project reflects original analysis and visual design based on the raw Kaggle dataset. Any insights are generated through unique exploration using Python and Power BI.

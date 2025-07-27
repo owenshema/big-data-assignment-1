@@ -7,7 +7,7 @@
 *Instructor:* Eric Maniraguha (📧 [eric.maniraguha@auca.ac.rw](mailto:eric.maniraguha@auca.ac.rw)) 
 *Group:* A 
 *Tool:* Power BI Desktop  
-*Dataset Source:* Uber Fares Dataset from Kaggle  
+*Dataset Source:* Uber Fares Dataset from kaggle  
 *Student Name:*SHEMA Owen 
 *Student ID:* 26253
 ---
@@ -155,4 +155,4 @@ The primary goal of this project is to analyze the Uber Fares dataset to uncover
 
 ## ✅ Academic Integrity
 
-All work submitted in this project reflects original analysis and visual design based on the raw Kaggle dataset. Any insights are generated through unique exploration using Python and Power BI.
+All work submitted in this project reflects original analysis and visual design based on the raw Kaggle dataset. Any insights are generated through unique exploration using google colab, python  and Power BI.

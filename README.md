@@ -56,7 +56,7 @@ The primary goal of this project is to analyze the Uber Fares dataset to uncover
 ---
 <img width="691" height="612" alt="fare amount" src="https://github.com/user-attachments/assets/4550b766-873d-413a-b484-d98a5a181559" />
 ### 4. 📊 Power BI Analysis
-
+https://drive.google.com/file/d/1tNrBsvpnVUNDUoAfFZJ7nCV4DBTt8yWV/view?usp=drive_link
 #### Visual 1: Number of Rides by Hour of Day
 - Chart Type: Clustered Column
 - Axis: pickup_hour
